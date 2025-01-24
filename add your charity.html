@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Charity Run/Walk - Add Your Charity</title>
+    <style>
+        /* body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1557682250-33bd709cbe85');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  
+  
+  header{
+    height: 100vh;
+
+    background-image: url('https://images.unsplash.com/photo-1486218119243-13883505764c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hhcml0eSUyMHJ1bnxlbnwwfHwwfHx8MA%3D%3D');
+            background-size: cover;
+            background-position:middle;
+            background-repeat: no-repeat;
+  
+    
+  }
+  
+
+  
+  .title{
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+  }
+  .title h1{
+    color: #fff;
+    
+    font-size: 25px;
+  }
+  
+  
+  
+  .logo img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
+    margin-left: 20px;
+    border-radius: 200px
+  
+  }
+  
+  .main{
+   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(10, 9, 9);
+    height: 65px;
+    width: 100%;
+    
+  }
+  
+  
+  ul{
+  
+    
+    margin-top: 20px;
+    margin-right: 40px;
+    float: right;
+    list-style-type: none;
+  
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  
+  ul li{
+    display: inline-block;
+    padding: 10px;
+    
+  
+  }
+  
+  ul li:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  .dropdown{
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(10, 9, 9);
+    border-radius: 10px;
+  }
+  
+  
+  
+  
+  ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    margin-left: -0.28cm;
+    margin-top: 0.27cm;
+  }
+  
+  .dropdown ul{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown ul li{
+    display: block;
+  }
+  .txt{
+   
+    margin-top: 200px;
+    margin-right: 60px;
+    
+  }
+
+  ul>a{
+    text-decoration: none;
+  border-top: solid white 1px;
+  color: black;
+}
+
+
+
+
+   
+
+
+        .charity-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            width: 750px;
+            max-height: 88vh;
+            overflow-y: auto;
+            margin-left: 26vw;
+            margin-top: 2vh;
+        }
+        h2, h3 {
+            text-align: center;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        input, button, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #e67e22;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #d35400;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    <header>
+      
+        <div class="main">
+          <dir class="logo">
+              <img src="run1.png">
+          </dir>
+      
+      
+      
+      
+      
+      
+        
+          <ul>
+            <li>Home
+
+              <div class="dropdown">
+                <ul>
+                  <a href="index.html"><li>Home</li></a>
+                </ul>
+              </div>
+        
+        
+        
+            </li>
+            <li>Charities
+            
+              <div class="dropdown">
+                <ul>
+                  <a href="Find a Charity.html"><li>Find a Charity</li></a>
+                  <a href="add your charity.html"><li>Add Your Charity</li></a>
+                </ul>
+              </div>
+            </li>
+            
+      
+      
+      
+          <li>Events
+            <div class="dropdown">
+              <ul>
+                <a href="Charity Places.html"> <li>Charity Places</li></a>
+                <a href="Reviews.html"><li>Reviews</li></a>
+                <a href="Calendar.html"><li>Calendar</li></a>
+              </ul>
+            </div>
+          </li>
+      
+      
+          <li>Fundraising
+            <div class="dropdown">
+              <ul>
+                <a href="Donations.html"><li>Donations</li></a>
+                <a href="Sponsorship.html"><li>Sponsorship</li></a>
+                <a href="How to Fundraise.html"><li>How to Fundraise</li></a>
+              </ul>
+            </div>
+          </li>
+      
+      
+          <li>Start to Run
+            <div class="dropdown">
+              <ul>
+                <a href="Training Plans.html"><li>Training Plans</li></a>
+                  <a href="Diet & Nutrition.html"><li>Diet & Nutrition</li></a>
+              </ul>
+            </div>
+          </li>
+      
+      
+          <li>Partners</li>
+      
+      
+          <li>Register
+            <div class="dropdown">
+              <ul>
+      
+                <a href="sign up.html"><li>Sign Up</li></a>
+                <a href="login.html"><li>Log In</li></a>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      
+        </div>
+      
+        <div class="title">
+          <h1>Charity</h1>
+      </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="charity-container">
+        <h2>Add Your Charity</h2>
+        <p>Run for Charity works with thousands of UK charities and collaborates with over 800+ event organisers to provide the biggest platform for filling places in challenge events.</p>
+        <p>Our unique model allows our charity members to access event places without upfront commitment. Charities can purchase places one at a time, avoiding unfilled entries and only paying for places they use.</p>
+        <p>Want to find out more? Please complete the form below and one of our team will be in touch.</p>
+        <form action="/charity-signup" method="post">
+            <label for="charity-name">Charity Name*</label>
+            <input type="text" id="charity-name" name="charity_name" placeholder="Charity Name" required>
+
+            <label for="charity-number">Registered Charity Number*</label>
+            <input type="text" id="charity-number" name="charity_number" placeholder="Registered Charity Number" required>
+
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website" placeholder="Website">
+
+            <h3>Address</h3>
+            <input type="text" name="address1" placeholder="Address 1">
+            <input type="text" name="address2" placeholder="Address 2">
+            <input type="text" name="city" placeholder="City">
+            <input type="text" name="postcode" placeholder="Postcode">
+
+            <h3>Contact Info</h3>
+            <input type="text" name="contact_name" placeholder="Contact Name">
+            <input type="email" name="contact_email" placeholder="Email Address" required>
+            <input type="email" name="verify_email" placeholder="Verify Email" required>
+            <input type="tel" name="phone" placeholder="Phone Number">
+
+            <label>
+                <input type="checkbox" name="terms" required> I accept the Run for Charity Terms & Conditions
+            </label>
+            <label>
+                <input type="checkbox" name="privacy" required> I accept the Run for Charity Privacy Policy
+            </label>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Run For Charity Reviews</title>  
+<style>body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+
+
+
+
+.top{  
+        margin-top: 0vh;
+        background-color: #28a745;  
+        color: white;  
+        text-align: center;  
+        padding: 15px;  
+    } 
+
+
+.nav{
+        background-color: #28a745;
+    text-decoration: none;
+    color: black;
+    margin-top: -16px;
+    
+}
+
+
+
+.title{
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+  }
+  .title h1{
+    color: #000;
+    padding-top: 0vh;
+    padding-left: -10vw;
+    font-size: 25px;
+  }
+  
+  
+  
+  .logo img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
+    margin-left: -19px;
+    border-radius: 200px
+  
+  }
+  
+  .main{
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(10, 9, 9);
+    height: 65px;
+    width: 100%;
+    
+  }
+  
+  
+  ul{
+  
+    
+    margin-top: 20px;
+    margin-right: 40px;
+    float: right;
+    list-style-type: none;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  
+  ul li{
+    display: inline-block;
+    padding: 10px;
+    
+  
+  }
+  
+  ul li:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  .dropdown{
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(10, 9, 9);
+    border-radius: 10px;
+  }
+  
+  
+  
+  
+  ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    margin-left: -0.28cm;
+    margin-top: 0.27cm;
+  }
+  
+  .dropdown ul{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown ul li{
+    display: block;
+  }
+  .txt{
+   
+    margin-top: 200px;
+    margin-right: 60px;
+    
+    
+  }
+  ul>a{
+    text-decoration: none;
+  border-top: solid white 1px;
+  color: black;
+}
+  header .nav>h1{
+padding-left: 100px;
+}
+
+
+
+
+
+header .top{  
+    background-color: red;  
+    color: white;  
+    text-align: center;  
+    padding: 20px 0;  
+   /* margin-left: 20px; */
+   
+}  
+
+.review-container,  
+.event-container {  
+    display: flex;  
+    justify-content: space-around;  
+    padding: 20px;  
+}  
+
+.review-item,  
+.event-item {  
+    background-color: black;  
+    color: white;  
+    text-align: center;  
+    padding: 15px;  
+    border-radius: 5px;  
+    width: calc(30% - 20px); /* Adjust for spacing */  
+    margin: 10px; /* Slight margin for spacing */  
+    transition: transform 0.3s, box-shadow 0.3s;  
+}  
+
+.review-item:hover,  
+.event-item:hover {  
+    transform: scale(1.05); /* Hover effect */  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  
+}  
+
+.review-item img,  
+.event-item img {  
+    width: 100%;  
+    border-radius: 5px;  
+}  
+
+.read-story {  
+    display: inline-block;  
+    background-color: red;  
+    color: white;  
+    padding: 10px 20px;  
+    border-radius: 5px;  
+    text-decoration: none;  
+    margin-top: 15px;  
+    transition: background-color 0.3s;  
+}  
+
+.read-story:hover {  
+    background-color: darkred;  
+}</style>
+</head>  
+<body>  
+
+
+
+
+
+
+    <header class="nav">
+        <div class="main">
+            <dir class="logo">
+                <img src="run1.png">
+            </dir>
+            <div class="title">
+                <h1>Charity</h1>
+            </div>
+        
+        
+        
+        
+        
+        
+          
+            <ul>
+
+              <li>Home
+
+                <div class="dropdown">
+                  <ul>
+                    <a href="index.html"><li>Home</li></a>
+                  </ul>
+                </div>
+          
+          
+          
+              </li>
+              <li>Charities
+              
+                <div class="dropdown">
+                  <ul>
+                    <a href="Find a Charity.html"><li>Find a Charity</li></a>
+                    <a href="add your charity.html"><li>Add Your Charity</li></a>
+                  </ul>
+                </div>
+              </li>
+              
+        
+        
+        
+            <li>Events
+              <div class="dropdown">
+                <ul>
+                <a href="Charity Places.html"><li>Charity Places</li></a>
+                <a href="Reviews.html"><li>Reviews</li></a>
+                <a href="Calendar.html"><li>Calendar</li></a>
+                </ul>
+              </div>
+            </li>
+        
+        
+            <li>Fundraising
+              <div class="dropdown">
+                <ul>
+                <a href="Donations.html"><li>Donations</li></a>
+                <a href="Sponsorship.html"><li>Sponsorship</li></a>
+                <a href="How to Fundraise.html"><li>How to Fundraise</li></a>
+                </ul>
+              </div>
+            </li>
+        
+        
+            <li>Start to Run
+              <div class="dropdown">
+                <ul>
+                  <a href="Training Plans.html"><li>Training Plans</li></a>
+                    <a href="Diet & Nutrition.html"><li>Diet & Nutrition</li></a>
+                </ul>
+              </div>
+            </li>
+        
+        
+            <li>Partners</li>
+        
+        
+            <li>Register
+              <div class="dropdown">
+                <ul>
+        
+                  <a href="sign up.html"><li>Sign Up</li></a>
+                  <a href="login.html"><li>Log In</li></a>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        
+          </div>
+        
+          
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header class="top" >  
+        <h1>REVIEWS</h1>  
+    </header>  
+    <main>  
+        <div class="review-container">  
+            <div class="review-item">  
+                <img src="r.jpg" alt="Run For Charity 2021">  
+                <h2>Run For Charity 2021</h2>  
+                <a href="#" class="read-story">Read Story</a>  
+            </div>  
+            <div class="review-item">  
+                <img src="https://admin.sportforcharity.com/uploads/1425048780_runningeventsinireland.jpg" alt="Charity Running Events In Ireland">  
+                <h2>Charity Running Events In Ireland</h2>  
+                <a href="#" class="read-story">Read Story</a>  
+            </div>  
+            <div class="review-item">  
+                <img src="https://admin.sportforcharity.com//uploads/YzJ4lMk9TJIloeCc.jpg" alt="Marathon Run for Charity">  
+                <h2>Marathon Run for Charity</h2>  
+                <a href="#" class="read-story">Read Story</a>  
+            </div>  
+        </div>  
+
+        <div class="event-container">  
+            <div class="event-item">  
+                <img src="ruu.jpg" alt="Half Marathon Run For Charity">  
+                <h2>Half Marathon Run For Charity</h2>  
+                <a href="#" class="read-story">Read Story</a>  
+            </div>  
+            <div class="event-item">  
+                <img src="ruuu.jpg" alt="10k Run For Charity">  
+                <h2>10k Run For Charity</h2>  
+                <a href="#" class="read-story">Read Story</a>  
+            </div>  
+            <div class="event-item">  
+                <img src="ru.jpg" alt="5k Run For Charity">  
+                <h2>5k Run For Charity</h2>  
+                <a href="#" class="read-story">Read Story</a>  
+            </div>  
+        </div>  
+    </main>  
+</body>  
+</html>
