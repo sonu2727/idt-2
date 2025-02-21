@@ -15,18 +15,16 @@
   }
   
   
-  header{
+  body{
     height: 100vh;
 
-    background-image: url('https://images.unsplash.com/photo-1486218119243-13883505764c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hhcml0eSUyMHJ1bnxlbnwwfHwwfHx8MA%3D%3D');
+    background-image: url('divyang.jpeg');
             background-size: cover;
             background-position:middle;
             background-repeat: no-repeat;
   
     
   }
-  
-
   
   .title{
     position: absolute;
@@ -35,12 +33,10 @@
     transform: translate(-50%, -50%);
   }
   .title h1{
-    color: #fff;
+    color: black;
     font-size: 25px;
   }
-  
-  
-  
+
   .logo img{
     float: left;
     width: 50px;
@@ -92,10 +88,7 @@
     color: rgb(10, 9, 9);
     border-radius: 10px;
   }
-  
-  
-  
-  
+
   ul li:hover .dropdown{
     display: block;
     position: absolute;
@@ -124,8 +117,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             width: 400px;
-            /* background: #000; */
-            margin-left: 40vw;
+            margin-left: 37vw;
             margin-top: 20vh;
            
            
@@ -151,45 +143,38 @@
         button:hover {
             background-color: #218838;
         }
-        ul>a{
-    text-decoration: none;
-  border-top: solid white 1px;
-  color: black;
+  
+ul li a{
+  text-decoration: none;
+border-top: solid white 1px;
+color: black;
 }
-
+footer {  
+  text-align: center;  
+  margin-top: 0vh;
+  padding: 10px; 
+ 
+  
+}
+footer p{
+color: white; 
+}
 
    </style>
 </head>
-
-
 <body>
   
-  <header>
+  
 
   <div class="main">
+    <header>
     <dir class="logo">
         <img src="run1.png">
     </dir>
-
-
-
-
-
-
   
     <ul>
 
-      <li>Home
-
-        <div class="dropdown">
-          <ul>
-            <a href="index.html"><li>Home</li></a>
-          </ul>
-        </div>
-  
-  
-  
-      </li>
+      <a href="index.html"><li style="color: black;">Home</li></a>
       <li>Charities
       
         <div class="dropdown">
@@ -225,19 +210,6 @@
     </li>
 
 
-    <li>Start to Run
-      <div class="dropdown">
-        <ul>
-          <a href="Training Plans.html"><li>Training Plans</li></a>
-            <a href="Diet & Nutrition.html"><li>Diet & Nutrition</li></a>
-        </ul>
-      </div>
-    </li>
-
-
-    <li>Partners</li>
-
-
     <li>Register
       <div class="dropdown">
         <ul>
@@ -254,9 +226,7 @@
   <div class="title">
     <h1>Charity</h1>
 </div>
- 
-
-
+  </header>
 <div class="signup-container">
     <h2>Sign Up for the Charity Run/Walk</h2>
     <form action="/submit" method="post">
@@ -275,11 +245,9 @@
 </div>
 
 
-</header>
-
-
-
-
+<footer>  
+  <p>© 2024 Runs for a Purpose</p>  
+</footer>
 
 </body>
 </html>
